@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{29C755BF-FC9F-4081-A653-620155E976F3}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <LangVersion>7.3</LangVersion>
+    <AssemblyName>YulgangServer</AssemblyName>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="lua51, Version=0.0.0.0, Culture=neutral, PublicKeyToken=1e1fb15b02227b8a, processorArchitecture=x86">
+      <HintPath>packages\VikingErik.LuaInterface.1.0.4213.34901\lib\net35\lua51.dll</HintPath>
+    </Reference>
+    <Reference Include="LuaInterface, Version=2.0.0.16708, Culture=neutral, processorArchitecture=x86">
+      <HintPath>packages\VikingErik.LuaInterface.1.0.4213.34901\lib\net35\LuaInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Design">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Design\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Management\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Data.Linq\v4.0_4.0.0.0__b77a5c561934e089\System.Data.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.DirectoryServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.DirectoryServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Net20">
+      <HintPath>C:\Users\213\Desktop\GameServer\Kenh ADMIN\Newtonsoft.Json.Net20.dll</HintPath>
+    </Reference>
+    <Reference Include="VikingErik.LuaInterface, Version=1.0.4213.34901, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\VikingErik.LuaInterface.1.0.4213.34901\lib\net35\VikingErik.LuaInterface.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bbg\AuthServer.cs" />
+    <Compile Include="bbg\ClientConnection.cs" />
+    <Compile Include="bbg\Listener.cs" />
+    <Compile Include="bbg\SockClienT.cs" />
+    <Compile Include="CheckCopy\ThreadParameter.cs" />
+    <Compile Include="ConsoleApplication2\Program.cs" />
+    <Compile Include="DbClss\Config.cs" />
+    <Compile Include="DbClss\DBA.cs" />
+    <Compile Include="DbClss\DbClass.cs" />
+    <Compile Include="DbClss\DbPoolClass.cs" />
+    <Compile Include="DbClss\ItmesIDClass.cs" />
+    <Compile Include="DbClss\SqlDBA.cs" />
+    <Compile Include="HelperTools\Converter.cs" />
+    <Compile Include="LinqSQL\TBL_QUESTDROP.cs" />
+    <Compile Include="Network\ByteQueue.cs" />
+    <Compile Include="Network\ByteQueueExceeded.cs" />
+    <Compile Include="Network\ByteQueueNew.cs" />
+    <Compile Include="Network\CapacityExceededException.cs" />
+    <Compile Include="Network\Listener.cs" />
+    <Compile Include="Network\MessagePump.cs" />
+    <Compile Include="Network\NetState.cs" />
+    <Compile Include="Network\PacketData.cs" />
+    <Compile Include="Network\PacketReader.cs" />
+    <Compile Include="Network\PacketReaderNew.cs" />
+    <Compile Include="Network\RzConnect.cs" />
+    <Compile Include="Network\SendQueue.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RxjhServer.RxjhServer\PlayersBes.cs" />
+    <Compile Include="RxjhServer.RxjhServer\World.cs" />
+    <Compile Include="RxjhServer\AtServerConnect.cs" />
+    <Compile Include="RxjhServer\BaseLock.cs" />
+    <Compile Include="RxjhServer\BigInteger.cs" />
+    <Compile Include="RxjhServer\BinIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RxjhServer\BossClass.cs" />
+    <Compile Include="RxjhServer\BufferPool.cs" />
+    <Compile Include="RxjhServer\Class2.cs" />
+    <Compile Include="RxjhServer\ClassDllImport.cs" />
+    <Compile Include="RxjhServer\ClassRSA.cs" />
+    <Compile Include="RxjhServer\Class_Show_Pill.cs" />
+    <Compile Include="RxjhServer\clsItemCraft.cs" />
+    <Compile Include="RxjhServer\clsItemCraftRequired.cs" />
+    <Compile Include="RxjhServer\ConfigClass.cs" />
+    <Compile Include="RxjhServer\Connect.cs" />
+    <Compile Include="RxjhServer\CRC32.cs" />
+    <Compile Include="RxjhServer\DropClass.cs" />
+    <Compile Include="RxjhServer\DropShuXClass.cs" />
+    <Compile Include="RxjhServer\EmailClass.cs" />
+    <Compile Include="RxjhServer\EventClass.cs" />
+    <Compile Include="RxjhServer\EventSink.cs" />
+    <Compile Include="RxjhServer\EventTopClass.cs" />
+    <Compile Include="RxjhServer\FlickerFreePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RxjhServer\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RxjhServer\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RxjhServer\FormUserParty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RxjhServer\GiftcodeClass.cs" />
+    <Compile Include="RxjhServer\GiftCodeRewardsClass.cs" />
+    <Compile Include="RxjhServer\HcItimesClass.cs" />
+    <Compile Include="RxjhServer\IThreadSafeDictionary.cs" />
+    <Compile Include="RxjhServer\Itimesx.cs" />
+    <Compile Include="RxjhServer\ItmeClass.cs" />
+    <Compile Include="RxjhServer\IWUser.cs" />
+    <Compile Include="RxjhServer\KillClass.cs" />
+    <Compile Include="RxjhServer\ListViewColumnSorter.cs" />
+    <Compile Include="RxjhServer\ListViewHelper.cs" />
+    <Compile Include="RxjhServer\Lock.cs" />
+    <Compile Include="RxjhServer\Locks.cs" />
+    <Compile Include="RxjhServer\logo.cs" />
+    <Compile Include="RxjhServer\LRUCacheHelper.cs" />
+    <Compile Include="RxjhServer\MapClass.cs" />
+    <Compile Include="RxjhServer\Memory.cs" />
+    <Compile Include="RxjhServer\Messagee.cs" />
+    <Compile Include="RxjhServer\MessageeDelegatee.cs" />
+    <Compile Include="RxjhServer\MessageeDelegaterE.cs" />
+    <Compile Include="RxjhServer\Messagee多包.cs" />
+    <Compile Include="RxjhServer\MonSterClss.cs" />
+    <Compile Include="RxjhServer\MoveClass.cs" />
+    <Compile Include="RxjhServer\MoveVector.cs" />
+    <Compile Include="RxjhServer\NetStateGuangbo.cs" />
+    <Compile Include="RxjhServer\NpcClass.cs" />
+    <Compile Include="RxjhServer\NpcDropClass.cs" />
+    <Compile Include="RxjhServer\OpenClass.cs" />
+    <Compile Include="RxjhServer\PacketWriter.cs" />
+    <Compile Include="RxjhServer\PetClass.cs" />
+    <Compile Include="RxjhServer\Players.cs" />
+    <Compile Include="RxjhServer\PlayerStyle.cs" />
+    <Compile Include="RxjhServer\PlayGjClass.cs" />
+    <Compile Include="RxjhServer\Program.cs" />
+    <Compile Include="RxjhServer\RC6.cs" />
+    <Compile Include="RxjhServer\ReadLock.cs" />
+    <Compile Include="RxjhServer\ReadOnlyLock.cs" />
+    <Compile Include="RxjhServer\RemoveClientDelegateE.cs" />
+    <Compile Include="RxjhServer\Reverser.cs" />
+    <Compile Include="RxjhServer\ReverserInfo.cs" />
+    <Compile Include="RxjhServer\ScriptClass.cs" />
+    <Compile Include="RxjhServer\SeveClass.cs" />
+    <Compile Include="RxjhServer\ShotClass.cs" />
+    <Compile Include="RxjhServer\Show1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RxjhServer\Side.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RxjhServer\SocketConnectEventArgs.cs" />
+    <Compile Include="RxjhServer\SocketConnectEventHandler.cs" />
+    <Compile Include="RxjhServer\SymmetricMethod.cs" />
+    <Compile Include="RxjhServer\ThreadSafeDictionary.cs" />
+    <Compile Include="RxjhServer\Timer.cs" />
+    <Compile Include="RxjhServer\TimerCallback.cs" />
+    <Compile Include="RxjhServer\TimerPriority.cs" />
+    <Compile Include="RxjhServer\TimerProfile.cs" />
+    <Compile Include="RxjhServer\TimerStateCallback.cs" />
+    <Compile Include="RxjhServer\TransferAttributes.cs" />
+    <Compile Include="RxjhServer\TxtClass.cs" />
+    <Compile Include="RxjhServer\UserIdList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RxjhServer\UserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RxjhServer\Utility.cs" />
+    <Compile Include="RxjhServer\WriteLock.cs" />
+    <Compile Include="RxjhServer\WUserBase.cs" />
+    <Compile Include="RxjhServer\WUserManager.cs" />
+    <Compile Include="RxjhServer\个人商店物品类.cs" />
+    <Compile Include="RxjhServer\个人商店类.cs" />
+    <Compile Include="RxjhServer\交易物品类.cs" />
+    <Compile Include="RxjhServer\交易类.cs" />
+    <Compile Include="RxjhServer\任务事件类.cs" />
+    <Compile Include="RxjhServer\任务物品类.cs" />
+    <Compile Include="RxjhServer\任务类.cs" />
+    <Compile Include="RxjhServer\公告类.cs" />
+    <Compile Include="RxjhServer\公有药品类.cs" />
+    <Compile Include="RxjhServer\冲关地图类.cs" />
+    <Compile Include="RxjhServer\制作药品表.cs" />
+    <Compile Include="RxjhServer\升天气功总类.cs" />
+    <Compile Include="RxjhServer\升天气功类.cs" />
+    <Compile Include="RxjhServer\在线时间奖励类.cs" />
+    <Compile Include="RxjhServer\地面物品类.cs" />
+    <Compile Include="RxjhServer\坐标Class.cs" />
+    <Compile Include="RxjhServer\套装列表类.cs" />
+    <Compile Include="RxjhServer\套装属性类.cs" />
+    <Compile Include="RxjhServer\客户端IP地址.cs" />
+    <Compile Include="RxjhServer\帮战Class.cs" />
+    <Compile Include="RxjhServer\帮派战_血战.cs" />
+    <Compile Include="RxjhServer\收服宠物.cs" />
+    <Compile Include="RxjhServer\攻击类.cs" />
+    <Compile Include="RxjhServer\文本兑换类.cs" />
+    <Compile Include="RxjhServer\时间药类.cs" />
+    <Compile Include="RxjhServer\检查物品类.cs" />
+    <Compile Include="RxjhServer\武功类.cs" />
+    <Compile Include="RxjhServer\气功属性.cs" />
+    <Compile Include="RxjhServer\气功类.cs" />
+    <Compile Include="RxjhServer\物品兑换类.cs" />
+    <Compile Include="RxjhServer\物品类.cs" />
+    <Compile Include="RxjhServer\狮子吼Class.cs" />
+    <Compile Include="RxjhServer\百宝阁类.cs" />
+    <Compile Include="RxjhServer\石头属性调整类.cs" />
+    <Compile Include="RxjhServer\等级奖励类.cs" />
+    <Compile Include="RxjhServer\箱子送元宝类.cs" />
+    <Compile Include="RxjhServer\组队Class.cs" />
+    <Compile Include="RxjhServer\群攻击类.cs" />
+    <Compile Include="RxjhServer\装备检测类.cs" />
+    <Compile Include="RxjhServer\转生次数类.cs" />
+    <Compile Include="RxjhServer\追加状态New类.cs" />
+    <Compile Include="RxjhTool\CheckCopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RxjhTool\Customer.cs" />
+    <Compile Include="RxjhTool\CustomProperty.cs" />
+    <Compile Include="RxjhTool\CustomPropertyCollection.cs" />
+    <Compile Include="RxjhTool\CustomPropertyDescriptor.cs" />
+    <Compile Include="RxjhTool\My任务阶段CollectionEditor.cs" />
+    <Compile Include="RxjhTool\My奖励物品CollectionEditor.cs" />
+    <Compile Include="RxjhTool\My需要物品CollectionEditor.cs" />
+    <Compile Include="RxjhTool\SpellingOptionsConverter.cs" />
+    <Compile Include="RxjhTool\YbiClass.cs" />
+    <Compile Include="RxjhTool\YbiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RxjhTool\YbQForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RxjhTool\任务奖励物品类.cs" />
+    <Compile Include="RxjhTool\任务类.cs" />
+    <Compile Include="RxjhTool\任务阶段类.cs" />
+    <Compile Include="RxjhTool\任务需要物品类.cs" />
+    <Compile Include="RxjhTool\坐标类.cs" />
+    <Compile Include="YulgangServer.Properties\Resources.cs" />
+    <Compile Include="YulgangServer.Properties\Settings.cs" />
+    <Compile Include="YulgangServer.RxjhServer.DbClss\RxjhClass.cs" />
+    <Compile Include="YulgangServer.RxjhServer.HelperTools\TextFormat.cs" />
+    <Compile Include="YulgangServer.RxjhServer\MissionClass.cs" />
+    <Compile Include="YulgangServer.RxjhServer\异常状态类.cs" />
+    <Compile Include="YulgangServer.RxjhServer\时间药品.cs" />
+    <Compile Include="YulgangServer\Encryption_Key.cs" />
+    <Compile Include="YulgangServer\HardwareInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RxjhServer\Form1.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

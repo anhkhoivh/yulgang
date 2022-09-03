@@ -1,0 +1,103 @@
+Boss怪暴冰魄寒玉石防御 -> BossMonsterStormIceApparitionColdJadeDefense
+
+Boss怪暴冰魄寒玉石类型设置 -> BossMonsterStormIceApparitionColdJadeTypeSetting
+
+Boss怪暴冰魄寒玉石武功防御 -> BossMonsterStormIceSoulColdJadeMartialArtsDefense 
+
+Boss怪暴寒玉石 -> BossMonsterStormJade 
+
+Boss怪暴混元金刚石 -> BossStrangeStormMixedElementDiamond 
+
+Boss怪暴金刚石 -> BossStrangeDiamond
+
+Boss怪暴凝霜寒玉石防御 -> BossMonsterViolentFrostAndColdJadeDefense
+
+Boss怪暴凝霜寒玉石类型设置 -> BossMonsterViolentCondensationFrostColdJadeTypeSetting
+
+Boss怪暴凝霜寒玉石武功防御 -> BossStrangeViolentCondensationFrostColdJadeMartialArtsDefense 
+
+Boss怪暴乾坤金刚石 -> BossStrangeViolentUniverseDiamond 
+
+Boss怪暴热血石 -> BossMonsterViolentBloodStone 
+
+Boss怪暴神秘金刚石武功 -> BossStrangeStormMysteriousDiamondMartialArts 
+
+Boss怪暴神秘金刚石追伤 -> BossStrangeStormMysteriousDiamondChase 
+
+Boss怪暴属性石 -> BossMonsterStormAttributeStone 
+
+list制作药品表 -> listOfMedicines
+
+客户端IP地址 -> ClientIPAddress 
+
+制作药品表 -> TableOfMedicines
+
+地面物品类 -> GroundItems 
+
+Pk等级差 -> PkGradeDifference 
+
+Pk掉等级 -> PkDropLevel 
+
+Pk掉元宝 -> PkDropIngot
+
+Pk掉元宝系统回收量 -> PkLostIngotSystemRecoveryVolume 
+
+Pk掉装备 -> PkDropEquipment
+
+Pk掉装备几率 -> PkEquipmentDropChance
+
+Pk掉装备善恶 -> PkEquipmentGoodAndEvil
+
+Pk开关 -> PkSwitch
+
+PK开关 -> PKSwitch
+
+Pk系统限制地图 -> PkSystemRestrictionMap
+
+武功类 -> MartialArts
+
+Vip地图 -> VipMap
+
+VIP地图 -> VIPMap
+
+Vip合成率 -> VipSynthesisRate 
+
+Vip经验倍数百分比 -> VipEXPMultiplierPercentage 
+
+Vip历练倍数百分比 -> VipExperienceMultiplierPercentage 
+
+Vip上线公告 -> VipOnlineAnnouncement 
+
+Vip上线公告内容 -> VipLaunchAnnouncementContent 
+
+七彩上线签名 -> ColorfulOnlineSignature 
+
+七彩上线签名内容 -> ColorfulOnlineSignatureContent
+
+Vip线 ->VipLine 
+
+组队Class -> TeamClass 
+
+W组队Id -> WTeamID 
+
+坐标Class -> CoordinateClass 
+
+安全区 -> SafePlace 
+
+安全区x坐标 -> SafeAreaXCoordinate 
+
+安全区y坐标 -> SafeAreaYCoordinate
+
+安全区地图 -> SafeZoneMap 
+
+安全区开关 -> SafeZoneSwitch
+
+百宝阁冰魄寒玉石防御 -> BaibaoPavilionIceSoulColdJadeDefense
+
+百宝阁冰魄寒玉石类型设置 -> BaibaogeIceSoulJadeTypeSetting
+
+百宝阁冰魄寒玉石武功防御 -> BaibaoPavilionIceSoulColdJadeMartialArtsDefense
+
+
+
+ 
